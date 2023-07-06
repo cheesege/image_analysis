@@ -40,14 +40,14 @@ class MainWindow_controller(QtWidgets.QMainWindow): #主要視窗呼叫
         folder_path = QFileDialog.getExistingDirectory(self,
                   "Open folder",
                   "./")                 # start path
-        print(folder_path)
+        #print(folder_path)
         self.ui.folderpath.setText(folder_path)
 
     def target_folder(self):
         target_path = QFileDialog.getExistingDirectory(self,
                   "Open folder",
                   "./")                 # start path
-        print(target_path)
+        #print(target_path)
         self.ui.targetpath.setText(target_path)
     #開啟資料夾的function
 
@@ -217,7 +217,7 @@ class MainWindow_controller(QtWidgets.QMainWindow): #主要視窗呼叫
         del wb["Sheet"]
         #刪除預設活頁簿
         os.chdir(targetpath)
-        print(targetpath)
+        #print(targetpath)
         #更新資料夾位置到程式資料夾
         excelname = folderspath[folderspath.rfind('/')+1:]
         #自動抓取檔案名稱
