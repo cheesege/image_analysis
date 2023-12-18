@@ -1,0 +1,1 @@
+pyinstaller -F -w -icon=.\cheese.ico --hidden-import opencv-python  --hidden-import openpyxl.cell._writer control.py
