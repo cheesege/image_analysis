@@ -197,7 +197,8 @@ class MainWindow_controller(QtWidgets.QMainWindow): #主要視窗呼叫
                     avreference += vreference
                 #print(float(avreference), float(file_count[img_sheet]))
                 avreference = float(avreference)/float(file_count[img_sheet])
-                shte.cell(yt+2, all+3).value = str(avreference)
+                shte.cell(yt+2, all+3).value = (avreference)
+                shte.cell(yt+2, all+3).font = ffont
             for yt in range(siz_sample[1]):
                 avsample =0
                 for xt in range(file_count[img_sheet]):
@@ -206,7 +207,8 @@ class MainWindow_controller(QtWidgets.QMainWindow): #主要視窗呼叫
                     avsample += vsample
                 #print(float(avsample), float(file_count[img_sheet]))
                 avsample = float(avsample) / float(file_count[img_sheet])
-                shte.cell(yt+2, all+2).value = str(avsample)
+                shte.cell(yt+2, all+2).value = (avsample)
+                shte.cell(yt+2, all+2).font = ffont
 
 
 
