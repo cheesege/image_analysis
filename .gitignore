@@ -3,5 +3,7 @@ control.spec
 /__pycache__/*
 build
 __pycache__
+dist
+cheese.spec
 
 
